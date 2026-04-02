@@ -61,15 +61,6 @@ The puzzle is solved using **backtracking with constraint checking**.
 
 # Problem 4: Cryptarithm Puzzle
 
-## Problem
-
-
-  TWO
-+ TWO
------
- FOUR
-
-
 Each letter represents a **distinct digit**.
 
 ## Constraints
