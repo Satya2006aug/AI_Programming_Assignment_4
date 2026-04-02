@@ -2,13 +2,6 @@
 
 This project implements several classical **Constraint Satisfaction Problems (CSPs)** using Python and backtracking search. CSPs involve assigning values to variables while satisfying constraints between them.
 
-The assignment includes implementations for:
-
-- Map Coloring for **Australia**
-- Map Coloring for the **33 districts of Telangana**
-- **Sudoku Solver**
-- **Cryptarithm Puzzle**
-
 ---
 
 # Problem 1: Australia Map Coloring
@@ -27,7 +20,7 @@ Assign colors to the seven principal states and territories of Australia such th
 
 ## CSP Formulation
 - **Variables:** States  
-- **Domain:** `{Red, Green, Blue}`  
+- **Domain:** {Red, Green, Blue} 
 - **Constraint:** Adjacent states must have different colors  
 
 The problem is solved using **backtracking search**.
@@ -41,7 +34,7 @@ Apply the map coloring CSP to the **33 districts of Telangana**, ensuring neighb
 
 ## CSP Formulation
 - **Variables:** Districts  
-- **Domain:** `{Red, Green, Blue, Yellow}`  
+- **Domain:** {Red, Green, Blue, Yellow}
 - **Constraint:** Adjacent districts must not share the same color  
 
 The result is visualized using **NetworkX** and **Matplotlib**, where districts are represented as nodes in a graph.
@@ -55,7 +48,7 @@ Solve a **9 × 9 Sudoku puzzle** using Constraint Satisfaction.
 
 ## CSP Formulation
 - **Variables:** 81 cells in the grid  
-- **Domain:** `{1,2,3,4,5,6,7,8,9}`  
+- **Domain:** {1,2,3,4,5,6,7,8,9}  
 
 ## Constraints
 - No duplicate numbers in a **row**
@@ -70,12 +63,12 @@ The puzzle is solved using **backtracking with constraint checking**.
 
 ## Problem
 
-```
+
   TWO
 + TWO
 -----
  FOUR
-```
+
 
 Each letter represents a **distinct digit**.
 
@@ -103,28 +96,6 @@ Install the required libraries:
 ```
 pip install networkx matplotlib
 ```
-
----
-
-# Running the Program
-
-Run the Python script:
-
-```
-python assignment.py
-```
-
-The program will sequentially solve all four problems and display the results.
-
----
-
-# Concepts Demonstrated
-
-- Constraint Satisfaction Problems (CSP)
-- Backtracking Search
-- Constraint Checking
-- Graph-based Problem Modeling
-- Visualization of Graph Coloring
 
 ---
 
